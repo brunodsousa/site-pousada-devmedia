@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+header {
+    background-color: white;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(108, 108, 108);
+}
+
+nav a:hover:not(#link-nome-topo) {
+    color: teal;
+    font-weight: 700;
+}
+
+.nome-topo a {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.nome-topo a span {
+    color: teal;
+}
+
+.links-topo {
+    width: 230px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links-topo a {
+    text-transform: uppercase;
+}
+
+.imagem-principal {
+    min-height: 70vh;
+    background:rgb(95, 193, 245) url('assets/img-fundo.jpg') left center/cover no-repeat;
+    background-position: ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card-principal {
+    border: 1px solid white;
+    background:rgba(0, 139, 139, 0.8);
+    color: white;
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.card-principal p {
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+/* apresentação das acomodações */
+
+.acomodacoes-index {
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+}
+
+.texto-acomodacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.texto-acomodacoes h2 {
+    font-size: 2em;
+    font-weight: 400;
+    color: teal;
+}
+
+.texto-acomodacoes p {
+    color: rgb(108, 108, 108);
+}
+
+.texto-acomodacoes p:first-of-type {
+    margin-top: 2rem;
+}
+
+.texto-acomodacoes p:last-of-type {
+    margin-top: 1rem;
+}
+
+.fotos-acomodacoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
+}
+
+.fotos-acomodacoes img {
+    height: 200px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.item-fotos {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    transition: transform 0.2s ease-in-out 0.1s;
+}
+
+.item-fotos:hover {
+    transform: scale(1.1);
+}
+
+.item-fotos a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(108, 108, 108);
+    padding: 1rem;
+    border-bottom: 2px solid teal;
+}
+
+/* rotas */
+
+.rotas {
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+}
+
+.textos-rotas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    padding: 2rem;
+}
+
+.textos-rotas h2 {
+    font-size: 2em;
+    font-weight: 400;
+    color: teal;
+}
+
+.textos-rotas p {
+    color: rgb(108, 108, 108);
+    margin-top: 2rem;
+}
+
+.google-maps iframe {
+    width: 100%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* sobre */
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.textos-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    padding: 2rem;
+}
+
+.textos-sobre h2 {
+    font-size: 2em;
+    font-weight: 400;
+    color: teal;
+}
+
+.textos-sobre p {
+    color: rgb(108, 108, 108);
+    margin-top: 2rem;
+}
+
+.detalhes-sobre {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-item {
+    width: 100px;
+    height: 120px;
+    padding: 2rem;
+}
+
+.img-pousada {
+    background:rgb(108, 108, 108) url('assets/img1.jpg') center/cover no-repeat;
+}
+
+.img-alimentacao {
+    background:rgb(108, 108, 108) url('assets/img3.jpg') center/cover no-repeat;
+}
+
+.img-quartos {
+    background:rgb(108, 108, 108) url('assets/img2.jpg') center/cover no-repeat;
+}
+
+.img-recepcao {
+    background:rgb(108, 108, 108) url('assets/img5.jpg') center/cover no-repeat;
+}
+
+.detalhes-sobre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-detalhes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 600px;
+}
+
+.texto-item {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.texto-item h3 {
+    font-size: 1.2em;
+    color:rgb(80, 80, 80);
+}
+
+.texto-item p {
+    font-size: 0.8em;
+    color: rgb(108, 108, 108);
+    margin-top: 1rem;
+}
+
+.pousada-e-alimentacao, .quartos-e-recepcao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* footer */ 
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    background-color: teal;
+    color: white;
+}
+
+.contato-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.textos-links-rodape {
+    width: 250px;
+}
+
+.texto-links-rodape h2 {
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.texto-links-rodape p {
+    padding: 0.9em;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.texto-links-rodape a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.texto-links-rodape a:hover {
+    font-weight: 400;
+}
+
+.links-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid rgb(20, 90, 90); 
+    padding: 1rem;
+}
+
+.item-links-rodape {
+    display: flex;
+    padding: 1rem;
+}
+
+.icone-rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright-rodape {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.copyright-rodape p {
+    font-weight: 300;
+    font-size: 0.9em;
+}
