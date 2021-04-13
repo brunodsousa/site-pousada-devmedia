@@ -204,7 +204,7 @@ h1 {
     justify-content: center;
     align-items: flex-start;
     padding: 2rem;
-    width: 1220px;
+    max-width: 1220px;
 }
 
 .informacoes-detalhes-quarto ul li {
