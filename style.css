@@ -61,7 +61,6 @@ nav a:hover:not(#link-nome-topo) {
 .imagem-principal {
     min-height: 70vh;
     background:rgb(95, 193, 245) url('assets/img-fundo.jpg') left center/cover no-repeat;
-    background-position: ;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
