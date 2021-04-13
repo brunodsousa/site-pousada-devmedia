@@ -363,3 +363,10 @@ footer {
     font-weight: 300;
     font-size: 0.9em;
 }
+
+.copyright-rodape a {
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+}
